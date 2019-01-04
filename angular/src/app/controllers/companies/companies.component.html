@@ -1,0 +1,39 @@
+
+<div class="row" *ngFor='let company of companies'>
+<div class="container color-dark">
+    <div class="col">
+        <h4 [routerLink]="['/companies/view',company.id]">{{company.name}}</h4>
+  </div>
+  <div class="container color-light">
+    <div class="col">
+      <p class="sm">{{company.description}}</p>
+      <p class="sm">Recruiter</p>
+      <p class="sm">{{company.address}}</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- <div class='card'>
+  <div class='card-header'>
+    {{title}}
+  </div>
+  <div class='card-body'>
+   
+    <div class='container'>
+        <div class='row' *ngFor='let company of companies'>
+            
+            <h4>{{company.name}}</h4>
+            <div class="row-md-4">
+              <div class="col-md-12">{{company.address}}</div>
+           </div> 
+           <div class="row-md-4">
+             <div class="col-md-12">Recruiter</div>
+            </div>
+         
+           <div class="row-md-4"><div class="col-md-12">{{company.description}}</div>
+          </div>
+
+       </div>
+  </div>
+</div> -->
